@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.tiwence.rgbcolorchallenge.MainActivity" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/gameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dip"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/scoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewHeader"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/gameLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/instructionsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dip"
+                    android:text="rbg(255, 255, 255)" />
+
+                <LinearLayout
+                    android:id="@+id/playLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.tiwence.rgbcolorchallenge.DiskView
+                        android:id="@+id/choice1"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_margin="5dip"
+                        android:background="@android:color/transparent" >
+                    </com.tiwence.rgbcolorchallenge.DiskView>
+
+                    <com.tiwence.rgbcolorchallenge.DiskView
+                        android:id="@+id/choice2"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_margin="5dip" >
+                    </com.tiwence.rgbcolorchallenge.DiskView>
+
+                    <com.tiwence.rgbcolorchallenge.DiskView
+                        android:id="@+id/choice3"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_margin="5dip" >
+                    </com.tiwence.rgbcolorchallenge.DiskView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/resultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" >
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="112dp"
+                android:text="Good !"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewFinalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewResult"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Score"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/buttonPlayAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewFinalScore"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="96dp"
+                android:text="Play again" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewFinalScore"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="96dp"
+                android:text="Next"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/buttonShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonPlayAgain"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Share score" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+</LinearLayout>
