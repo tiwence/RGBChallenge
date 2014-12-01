@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_bg_selected_color">#66000000</color>
+    <color name="dark_gray">#FF5C5C5C</color>
+    <color name="light_gray">#FFDCDCDC</color>
+
+</resources>

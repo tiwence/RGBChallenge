@@ -69,11 +69,11 @@ public class DiskView extends View {
 		int x = getWidth();
 		int y = getHeight();
 		int radius;
-		radius = 100;
+		radius = getWidth() / 2;
 		Paint paint = new Paint();
 		paint.setAntiAlias(true);
 		paint.setStyle(Paint.Style.FILL);
-		paint.setColor(Color.WHITE);
+		paint.setColor(Color.TRANSPARENT);
 		canvas.drawPaint(paint);
 		// Use Color.parseColor to define HTML colors
 		paint.setColor(Color.rgb(mRed, mGreen, mBlue));

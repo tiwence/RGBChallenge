@@ -1,14 +1,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="com.tiwence.rgbcolorchallenge.MainActivity" >
 
     <ViewFlipper
         android:id="@+id/viewFlipperContainer"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" >
 
         <RelativeLayout
             android:id="@+id/gameLayout"
@@ -21,9 +23,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:paddingTop="20dip"
+                android:layout_marginTop="40dip"
                 android:text="@string/app_name"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/dark_gray"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/scoreTextView"
@@ -31,8 +35,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textViewHeader"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
                 android:text=""
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/dark_gray" />
 
             <LinearLayout
                 android:id="@+id/gameLinearLayout"
@@ -47,7 +53,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="15dip"
-                    android:text="rbg(255, 255, 255)" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:id="@+id/playLinearLayout"
@@ -57,27 +65,37 @@
 
                     <com.tiwence.rgbcolorchallenge.DiskView
                         android:id="@+id/choice1"
-                        android:layout_width="70dip"
-                        android:layout_height="70dip"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
                         android:layout_margin="5dip"
                         android:background="@android:color/transparent" >
                     </com.tiwence.rgbcolorchallenge.DiskView>
 
                     <com.tiwence.rgbcolorchallenge.DiskView
                         android:id="@+id/choice2"
-                        android:layout_width="70dip"
-                        android:layout_height="70dip"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
                         android:layout_margin="5dip" >
                     </com.tiwence.rgbcolorchallenge.DiskView>
 
                     <com.tiwence.rgbcolorchallenge.DiskView
                         android:id="@+id/choice3"
-                        android:layout_width="70dip"
-                        android:layout_height="70dip"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
                         android:layout_margin="5dip" >
                     </com.tiwence.rgbcolorchallenge.DiskView>
                 </LinearLayout>
             </LinearLayout>
+
+            <!-- sign-in button -->
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -93,8 +111,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="112dp"
-                android:text="Good !"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textViewFinalScore"
@@ -103,8 +122,9 @@
                 android:layout_below="@+id/textViewResult"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:text="Score"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:text="@string/score"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/buttonPlayAgain"
@@ -113,7 +133,11 @@
                 android:layout_below="@+id/textViewFinalScore"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="96dp"
-                android:text="Play again" />
+                android:background="@drawable/background_button"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/play_again"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/nextButton"
@@ -122,7 +146,11 @@
                 android:layout_below="@+id/textViewFinalScore"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="96dp"
-                android:text="Next"
+                android:background="@drawable/background_button"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
                 android:visibility="gone" />
 
             <Button
@@ -132,7 +160,24 @@
                 android:layout_below="@+id/buttonPlayAgain"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:text="Share score" />
+                android:background="@drawable/background_button"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/share"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/buttonLeaderboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonShare"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_button"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/leaderboard"
+                android:textColor="@android:color/white" />
         </RelativeLayout>
     </ViewFlipper>
 
