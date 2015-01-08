@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RGB Color Challenge</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="about">A propos</string>
+    <string name="score">Score</string>
+    <string name="play_again">Nouvelle partie</string>
+    <string name="share">Partager</string>
+    <string name="leaderboard">Classement</string>
+    <string name="next">Suivant</string>
+    <string name="rgb">rvb(%1$d, %2$d, %3$d)</string>
+    <string name="your_score">Score : %1$d</string>
+    <string name="final_score">Score final : %1$d</string>
+    <string name="share_body">J\'ai eu %1$d point(s) au the RGB Color Challenge ! %2$s</string>
+    <string name="about_text">%1$s version %2$s développé par tiwence</string>
+    <string name="new_highscore">Félicitations ! Vous avez un nouveau record !</string>
+    <string name="gamehelper_sign_in_failed">Connexion impossible. Veuillez vérifier votre connexion internet et réessayer.</string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="gamehelper_license_failed">Impossible de vérifier la license.</string>
+    <string name="gamehelper_unknown_error">Erreur inconnue.</string>
+    <string name="sign_in_failed">Connexion impossible. Veuillez vérifier votre connexion internet et réessayer.</string>
+    <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="license_failed">Impossible de vérifier la license.</string>
+    <string name="unknown_error">Erreur inconnue.</string>
+    <string name="signin_failure">Connexion impossible.</string>
+    <string name="signin_other_error">Connexion impossible. Erreur inconnue.</string>
+    <string name="share_subject">Voici mon score au jeu RGB Color Challenge !</string>
+    <string name="share_app_subject">Le jeu RGB Color Challenge </string>
+    <string name="review">Noter</string>
+    <string name="contact">Contact</string>
+    <string name="share_via">Partager avec</string>
+    <string name="contact_via">Contacter avec</string>
+    <string name="contact_subject">Email à propos de l\'application RGB Color Challenge</string>
+    <string name="wikipedia_rules">Sources Wikipedia : Rouge vert bleu, abrégé RVB, est le plus simple des systèmes de codage informatique des couleurs . Les écrans d\'ordinateurs reconstituent une couleur par synthèse additive à partir de trois couleurs primaires, un rouge, un vert et un bleu, formant sur l\'écran une mosaïque trop petite pour être aperçue. Le codage RVB indique l\'intensité pour chacune de ces couleurs primaires.
+Pour chacune des couleurs primaires, la valeur s\'exprime dans un intervalle entre 0 et le maximum, qui est soit 1, soit 100%, soit 255. \n\n Les règles du jeu sont simples : il faut deviner, le plus de fois possible à la suite, la couleur associée au code RVB afficher entre parenthèses !</string>
+
+    <string-array name="good_answer_sentences">
+        <item>Bien !!</item>
+        <item>Bien joué :)</item>
+        <item>Come on !!</item>
+        <item>Super !</item>
+        <item>Incroyable !</item>
+        <item>C\'est ça qu\'on veut voir !</item>
+        <item>Innarêtable !!</item>
+    </string-array>
+    <string-array name="bad_answer_sentences">
+        <item>Ca s\'est joué à rien :(</item>
+        <item>Mince...</item>
+        <item>Oooooh... :(</item>
+        <item>Dommage... :\'(</item>
+        <item>Essaie encore !</item>
+        <item>Peut être la prochaine fois !</item>
+    </string-array>
+
+</resources>

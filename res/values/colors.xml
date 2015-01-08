@@ -4,5 +4,8 @@
     <color name="button_bg_selected_color">#66000000</color>
     <color name="dark_gray">#FF5C5C5C</color>
     <color name="light_gray">#FFDCDCDC</color>
+    <color name="light_green">#FF68B159</color>
+    <color name="light_red">#FFD3696C</color>
+    <color name="light_blue">#FF4A6B8A</color>
 
 </resources>

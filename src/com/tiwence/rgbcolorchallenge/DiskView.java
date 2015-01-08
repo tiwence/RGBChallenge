@@ -1,5 +1,7 @@
 package com.tiwence.rgbcolorchallenge;
 
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -29,11 +31,10 @@ public class DiskView extends View {
 		setClickable(true);
 	}
 
-
-	public void setDiskViewColor(int[] rgbColors) {
-		this.mRed = rgbColors[0];
-		this.mGreen = rgbColors[1];
-		this.mBlue = rgbColors[2];
+	public void setDiskViewColor(ArrayList<Integer> rgbColors) {
+		this.mRed = rgbColors.get(0);
+		this.mGreen = rgbColors.get(1);;
+		this.mBlue = rgbColors.get(2);;
 		this.invalidate();
 	}
 

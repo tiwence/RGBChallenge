@@ -3,5 +3,11 @@
 
     <string name="app_id">178505712190</string>
     <string name="rgb_color_challenge_leaderboard_id">CgkIvoSU_pgFEAIQAA</string>
+    <string name="first_point_achievement_id">CgkIvoSU_pgFEAIQAg</string>
+    <string name="five_points_achievement_id">CgkIvoSU_pgFEAIQAw</string>
+    <string name="ten_points_achievement_id">CgkIvoSU_pgFEAIQBA</string>
+    <string name="fifteen_points_achievement_id">CgkIvoSU_pgFEAIQBQ</string>
+    <string name="twenty_points_achievement_id">CgkIvoSU_pgFEAIQBg</string>
+    <string name="unstoppable_achievement_id">CgkIvoSU_pgFEAIQBw</string>
 
 </resources>

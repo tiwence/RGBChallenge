@@ -7,12 +7,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class RgbUtils {
-	
+
 	public static final String PREFS_NAME = "MyPrefsFile";
-	
+
+	public static final String PLAYSTORE_URL = "https://play.google.com/store/apps/details?id=com.tiwence.rgbcolorchallenge";
+
 	public static Typeface mTypeFaceReg;
 	public static Typeface mTypeFaceBold;
-	
+
 	public static int getHighscoreForUser(Context context, String playerName) {
 		SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
 		return prefs.getInt(playerName, 0);
@@ -47,6 +49,6 @@ public class RgbUtils {
 			}
 		}
 	}
-	
-	
+
+
 }
