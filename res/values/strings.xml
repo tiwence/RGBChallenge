@@ -33,7 +33,7 @@
     <string name="contact">Contact</string>
     <string name="share_via">Share via</string>
     <string name="contact_via">Contact via</string>
-    <string name="wikipedia_rules">From Wikipedia : The RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue. \n\nIn computers, the component values are often stored as integer numbers in the range 0 to 255. \n\n So, the rules of the game are very simple : you have to find the right color, most often as a result, according to his RGB value specified between the brackets. </string>
+    <string name="wikipedia_rules">From Wikipedia : The RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue. \n\nIn computers, the component values are often stored as integer numbers in the range 0 to 255. \n\n (255, 0, 0) : perfect red\n(0, 255, 0) : perfect green\n(0, 0, 255) : perfect blue\n\n So, the rules of the game are very simple : you have to find the right color, most often as a result, according to his RGB value specified between the brackets. </string>
     <string name="contact_subject">Email about RGB Color Challenge app</string>
 
     <string-array name="good_answer_sentences">

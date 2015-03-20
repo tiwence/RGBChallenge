@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.tiwence.rgbcolorchallenge.MainActivity" >
+    tools:context="com.tiwence.rgbcolorchallengegame.MainActivity" >
 
     <RelativeLayout
         android:id="@+id/mainContainer"
@@ -68,27 +68,27 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <com.tiwence.rgbcolorchallenge.DiskView
+                        <com.tiwence.rgbcolorchallengegame.DiskView
                             android:id="@+id/choice1"
                             android:layout_width="80dip"
                             android:layout_height="80dip"
                             android:layout_margin="5dip"
                             android:background="@android:color/transparent" >
-                        </com.tiwence.rgbcolorchallenge.DiskView>
+                        </com.tiwence.rgbcolorchallengegame.DiskView>
 
-                        <com.tiwence.rgbcolorchallenge.DiskView
+                        <com.tiwence.rgbcolorchallengegame.DiskView
                             android:id="@+id/choice2"
                             android:layout_width="80dip"
                             android:layout_height="80dip"
                             android:layout_margin="5dip" >
-                        </com.tiwence.rgbcolorchallenge.DiskView>
+                        </com.tiwence.rgbcolorchallengegame.DiskView>
 
-                        <com.tiwence.rgbcolorchallenge.DiskView
+                        <com.tiwence.rgbcolorchallengegame.DiskView
                             android:id="@+id/choice3"
                             android:layout_width="80dip"
                             android:layout_height="80dip"
                             android:layout_margin="5dip" >
-                        </com.tiwence.rgbcolorchallenge.DiskView>
+                        </com.tiwence.rgbcolorchallengegame.DiskView>
                     </LinearLayout>
                 </LinearLayout>
 

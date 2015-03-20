@@ -5,6 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Paramètres</string>
     <string name="about">A propos</string>
+    <string name="rules_infos">Informations et règles du jeu</string>
     <string name="score">Score</string>
     <string name="play_again">Nouvelle partie</string>
     <string name="share">Partager</string>
@@ -33,8 +34,8 @@
     <string name="share_via">Partager avec</string>
     <string name="contact_via">Contacter avec</string>
     <string name="contact_subject">Email à propos de l\'application RGB Color Challenge</string>
-    <string name="wikipedia_rules">Sources Wikipedia : Rouge vert bleu, abrégé RVB, est le plus simple des systèmes de codage informatique des couleurs . Les écrans d\'ordinateurs reconstituent une couleur par synthèse additive à partir de trois couleurs primaires, un rouge, un vert et un bleu, formant sur l\'écran une mosaïque trop petite pour être aperçue. Le codage RVB indique l\'intensité pour chacune de ces couleurs primaires.
-Pour chacune des couleurs primaires, la valeur s\'exprime dans un intervalle entre 0 et le maximum, qui est soit 1, soit 100%, soit 255. \n\n Les règles du jeu sont simples : il faut deviner, le plus de fois possible à la suite, la couleur associée au code RVB afficher entre parenthèses !</string>
+    <string name="wikipedia_rules">Sources Wikipedia : Rouge vert bleu, abrégé RVB, est le plus simple des systèmes de codage informatique des couleurs . Les écrans d\'ordinateurs reconstituent une couleur par synthèse additive à partir de trois couleurs primaires, un rouge, un vert et un bleu, formant sur l\'écran une mosaïque trop petite pour être aperçue. Le codage RVB indique l\'intensité pour chacune de ces couleurs primaires. 
+\n\nPour chacune des couleurs primaires, la valeur s\'exprime dans un intervalle entre 0 et le maximum, qui est soit 1, soit 100%, soit 255. \n\n (255, 0, 0) : rouge parfait\n(0, 255, 0) : vert parfait\n(0, 0, 255) : bleu parfait\n\n Les règles du jeu sont simples : il faut deviner, le plus de fois possible à la suite, la couleur associée au code RVB affiché entre parenthèses !</string>
 
     <string-array name="good_answer_sentences">
         <item>Bien !!</item>
